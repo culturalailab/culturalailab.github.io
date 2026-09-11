@@ -1,1 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Cultural AI Lab</title>
+<meta name="description" content="Current research at the Cultural AI Lab: AI slop, AI and creativity, and the downstream effects of LLMs on digital platforms.">
+<style>
+  :root {
+    --ink: #14161a;
+    --ink-soft: #4a4f57;
+    --rule: #d8d6d0;
+    --accent: #6d2733;
+    --paper: #fdfdfc;
+    --sans: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
 
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Charter, "Bitstream Charter", "Iowan Old Style", "Source Serif Pro", Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .wrap {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.75rem 4rem;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .place {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    line-height: 1.45;
+    color: var(--ink-soft);
+    margin: 0.75rem 0 0;
+  }
+
+  nav {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    margin: 1.6rem 0 0;
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  nav a {
+    margin-right: 1.4rem;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+  }
+
+  nav a:hover,
+  nav a:focus { border-bottom-color: var(--accent); }
+  nav a[aria-current="page"] { border-bottom-color: var(--ink); }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 3rem 0 0.9rem;
+  }
+
+  .topics > section:first-of-type h2 { margin-top: 2.4rem; }
+
+  p { margin: 0 0 1.05rem; }
+
+  a { color: var(--accent); }
+  a:hover { text-decoration: none; }
+
+  ol.papers {
+    list-style: none;
+    margin: 1.3rem 0 0;
+    padding: 0;
+  }
+
+  ol.papers li {
+    margin: 0 0 1.1rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--rule);
+  }
+
+  ol.papers .title { font-weight: 600; }
+
+  ol.papers .meta {
+    display: block;
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    line-height: 1.45;
+    margin-top: 0.15rem;
+  }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 40rem) {
+    .wrap { padding: 2.5rem 1.25rem 3rem; }
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.1rem; }
+    nav a { margin-right: 1rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Cultural AI Lab</h1>
+  <p class="place">Duke University</p>
+
+  <nav>
+    <a href="index.html">About</a>
+    <a href="projects.html" aria-current="page">Projects</a>
+    <a href="people.html">People</a>
+  </nav>
+
+  <div class="topics">
+
+    <section>
+      <h2>AI slop</h2>
+      <p>We are developing a science of unwanted AI content. So-called AI slop now saturates our online ecosystems, degrading trust, functionality, and authenticity &mdash; while at the same time carrying real affordances, opening strange new forms of creative and communicative expression. We build tools and methods to measure slop on platforms such as Reddit and Substack, parse its effects on user experience, and devise governance strategies that respect both its harms and its possibilities.</p>
+
+      <ol class="papers">
+        <li>
+          <span class="title">Why Slop Matters</span>
+          <span class="meta">Cody Kommers et al. <em>ACM AI Letters</em>, 2026. <a href="https://arxiv.org/abs/2601.06060" target="_blank" rel="noopener">Read paper</a></span>
+        </li>
+        <li>
+          <span class="title">The Social and Cultural Life of AI Slop</span>
+          <span class="meta">In progress.</span>
+        </li>
+        <li>
+          <span class="title">What&rsquo;s to Like about AI Slop? Creating It Changes How You Feel about It</span>
+          <span class="meta">In progress.</span>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>AI and creativity</h2>
+      <p>All stories are social, and so is creativity. Current systems optimize toward a single generic reader, which silently targets the aggregate taste of the largest market and reproduces what is already dominant. We build instruments that hold reader difference rather than averaging it away &mdash; simulated communities of readers, grounded in real ones, whose responses are surfaced back to the writer, so that AI storytelling answers to actual audiences rather than to no one.</p>
+
+      <ol class="papers">
+        <li>
+          <span class="title">Readers in the Loop: Building Interpretive Communities for AI Storytelling</span>
+          <span class="meta">In progress.</span>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Downstream effects of LLMs on digital platforms</h2>
+      <p>We study what happens when LLMs are deployed at scale on live platforms like Reddit and Substack, and what their increasingly obvious problems &mdash; homogenization, model collapse &mdash; do to communication and creativity in the wild. Who benefits from deployment at this scale? How is it changing culture? Are humans starting to sound more like bots? Does detection work, or does it mostly punish the wrong people?</p>
+
+      <ol class="papers">
+        <li>
+          <span class="title">Playing for the Detector: How AI Suspicion Changes What Artists Make</span>
+          <span class="meta">In progress.</span>
+        </li>
+        <li>
+          <span class="title">Model Fingerprints: Which LLMs Are Writing the Internet?</span>
+          <span class="meta">In progress.</span>
+        </li>
+      </ol>
+    </section>
+
+  </div>
+
+  <footer>
+    Directed by <a href="https://richardjeanso.github.io/" target="_blank" rel="noopener">Richard Jean So</a> &middot; <a href="mailto:richard.so@duke.edu">richard.so@duke.edu</a> &middot; Duke University
+  </footer>
+
+</div>
+</body>
+</html>
