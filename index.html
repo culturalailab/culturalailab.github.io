@@ -1,1 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cultural AI Lab — Duke University</title>
+<meta name="description" content="The Cultural AI Lab at Duke University measures what changes when machines become participants in culture, and builds the social systems that make it go better.">
+<style>
+  :root {
+    --ink: #14161a;
+    --ink-soft: #4a4f57;
+    --rule: #d8d6d0;
+    --accent: #6d2733;
+    --paper: #fdfdfc;
+    --sans: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
 
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Charter, "Bitstream Charter", "Iowan Old Style", "Source Serif Pro", Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .wrap {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.75rem 4rem;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .place {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    line-height: 1.45;
+    color: var(--ink-soft);
+    margin: 0.75rem 0 0;
+  }
+
+  nav {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    margin: 1.6rem 0 0;
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  nav a {
+    margin-right: 1.4rem;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+  }
+
+  nav a:hover,
+  nav a:focus { border-bottom-color: var(--accent); }
+  nav a[aria-current="page"] { border-bottom-color: var(--ink); }
+
+  h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 2.6rem 0 1rem;
+  }
+
+  p { margin: 0 0 1.05rem; }
+
+  a { color: var(--accent); }
+  a:hover { text-decoration: none; }
+
+  .intro { margin-top: 2.4rem; }
+
+  .lede {
+    font-size: 1.22rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+
+  ol.pubs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ol.pubs li {
+    margin: 0 0 1.35rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--rule);
+  }
+
+  ol.pubs .title { font-weight: 600; }
+  ol.pubs .venue { font-style: italic; }
+
+  ol.pubs .with {
+    display: block;
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    line-height: 1.45;
+    margin-top: 0.15rem;
+  }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 40rem) {
+    .wrap { padding: 2.5rem 1.25rem 3rem; }
+    h1 { font-size: 1.8rem; }
+    .lede { font-size: 1.1rem; }
+    nav a { margin-right: 1rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Cultural AI Lab</h1>
+  <p class="place">Duke University</p>
+
+  <nav>
+    <a href="index.html" aria-current="page">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="people.html">People</a>
+  </nav>
+
+  <section class="intro">
+    <p class="lede">The Cultural AI Lab studies what happens when machines become participants in culture &mdash; making it, consuming it, judging it, and increasingly judging us.</p>
+
+    <p>Undergraduate and graduate students in the humanities, computer science, and data science work together to study the impact of generative AI on cultural production and consumption, and how we might better redesign these systems for humans. We combine large-scale computational analysis with experiments and surveys, and we read closely.</p>
+
+    <p>We are currently working on four topics: AI slop; improving AI systems for human creativity; interpretive intelligence &mdash; the interpretive capacities of AI systems and how they reshape our own capacity for discernment &mdash; and the downstream effects of LLMs on digital platforms. Current studies under each are on the <a href="projects.html">projects</a> page.</p>
+
+  </section>
+
+  <h2>Selected work</h2>
+  <ol class="pubs">
+    <li>
+      <span class="title">Critical Confabulation</span><br>
+      <span class="venue">International Conference on Learning Representations (ICLR)</span>, 2026.
+      <span class="with">Peiqi Sui, Eamon Duede, Richard Jean So, Hoyt Long.</span>
+    </li>
+    <li>
+      <span class="title">The Social AI Author: Modeling Creativity and Distinction in Simulated Cultural Fields</span><br>
+      <span class="venue">AI &amp; Society</span>, 2026.
+      <a href="https://link.springer.com/article/10.1007/s00146-025-02790-0" target="_blank" rel="noopener">Read paper</a>
+      <span class="with">Edwin Roland, Richard Jean So, Hoyt Long.</span>
+    </li>
+    <li>
+      <span class="title">Why Slop Matters</span><br>
+      <span class="venue">ACM AI Letters</span>, 2026.
+      <a href="https://arxiv.org/abs/2601.06060" target="_blank" rel="noopener">Read paper</a>
+      <span class="with">Cody Kommers and colleagues, with Richard Jean So and Hoyt Long.</span>
+    </li>
+    <li>
+      <span class="title">What Does AI Do for Cultural Interpretation? A Randomized Experiment on Close Reading with Exposure to AI</span><br>
+      <span class="venue">ACM Conference on Human Factors in Computing Systems (CHI)</span>, 2026.
+      <a href="https://doi.org/10.1145/3772318.3791727" target="_blank" rel="noopener">Read paper</a>
+      <span class="with">Jiayin Zhi, Hoyt Long, Richard Jean So, Mina Lee.</span>
+    </li>
+    <li>
+      <span class="title">Spoiler Alert: Narrative Forecasting as a Metric for Tension in LLM Storytelling</span><br>
+      <span class="venue">Conference on Language Modeling (COLM)</span>, 2026.
+      <a href="https://arxiv.org/abs/2604.09854" target="_blank" rel="noopener">Read preprint</a>
+      <span class="with">Peiqi Sui, Yutong Zhu, Tianyi Cheng, Peter West, Richard Jean So, Hoyt Long, Ari Holtzman.</span>
+    </li>
+  </ol>
+
+  <h2>Get involved</h2>
+  <p>Faculty, graduate students, and undergraduates interested in this work are welcome to <a href="mailto:richard.so@duke.edu">get in touch</a>. Prospective PhD applicants in English should write directly.</p>
+
+  <footer>
+    Directed by <a href="https://richardjeanso.github.io/" target="_blank" rel="noopener">Richard Jean So</a> · <a href="mailto:richard.so@duke.edu">richard.so@duke.edu</a> · Duke University
+  </footer>
+
+</div>
+</body>
+</html>
