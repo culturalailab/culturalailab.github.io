@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>People — Cultural AI Lab</title>
+<meta name="description" content="Students working with the Cultural AI Lab at Duke University, and how to get involved.">
+<style>
+  :root {
+    --ink: #14161a;
+    --ink-soft: #4a4f57;
+    --rule: #d8d6d0;
+    --accent: #6d2733;
+    --paper: #fdfdfc;
+    --sans: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
 
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Charter, "Bitstream Charter", "Iowan Old Style", "Source Serif Pro", Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .wrap {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.75rem 4rem;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .place {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    line-height: 1.45;
+    color: var(--ink-soft);
+    margin: 0.75rem 0 0;
+  }
+
+  nav {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    margin: 1.6rem 0 0;
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  nav a {
+    margin-right: 1.4rem;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+  }
+
+  nav a:hover,
+  nav a:focus { border-bottom-color: var(--accent); }
+  nav a[aria-current="page"] { border-bottom-color: var(--ink); }
+
+  h2 {
+    font-size: 0.82rem;
+    font-family: var(--sans);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 2.4rem 0 0.8rem;
+  }
+
+  p { margin: 0 0 1.05rem; }
+
+  a { color: var(--accent); }
+  a:hover { text-decoration: none; }
+
+  .intro { margin-top: 2.4rem; }
+
+  ul.people {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.people li {
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  ul.people li:last-child { border-bottom: none; }
+
+  ul.people .where {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    margin-left: 0.5rem;
+  }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 40rem) {
+    .wrap { padding: 2.5rem 1.25rem 3rem; }
+    h1 { font-size: 1.8rem; }
+    nav a { margin-right: 1rem; }
+    ul.people .where { display: block; margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Cultural AI Lab</h1>
+  <p class="place">Duke University</p>
+
+  <nav>
+    <a href="index.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="people.html" aria-current="page">People</a>
+  </nav>
+
+  <section class="intro">
+    <p>I am always eager to work with new students in the lab, undergraduate and graduate, at Duke and beyond. If you are interested, email me at <a href="mailto:richard.so@duke.edu">richard.so@duke.edu</a> describing your interests and background, and the kinds of projects you would want to work on.</p>
+
+    <p>Students currently working with the lab:</p>
+  </section>
+
+  <h2>Doctoral</h2>
+  <ul class="people">
+    <li>Patrick Sui <span class="where">McGill University</span></li>
+  </ul>
+
+  <h2>Master&rsquo;s</h2>
+  <ul class="people">
+    <li>Michael Badu <span class="where">Duke University</span></li>
+    <li>Ziyang Qin <span class="where">Duke University</span></li>
+    <li>Jiayi Sun <span class="where">Duke University</span></li>
+    <li>Taylor Allen <span class="where">Duke University</span></li>
+    <li>Zherui Zhang <span class="where">Duke University</span></li>
+  </ul>
+
+  <h2>Undergraduate</h2>
+  <ul class="people">
+    <li>Amanda Cheng <span class="where">Duke University</span></li>
+    <li>Matthew Del Preto <span class="where">Duke University</span></li>
+    <li>Ella Jorgenson <span class="where">Duke University</span></li>
+    <li>Enqiang Yuan <span class="where">Duke University</span></li>
+  </ul>
+
+  <h2>Alumni</h2>
+  <ul class="people">
+    <li>Zini Yang <span class="where">Duke MS &mdash; now PhD in Computer Science, Johns Hopkins University</span></li>
+  </ul>
+
+  <footer>
+    Directed by <a href="https://richardjeanso.github.io/" target="_blank" rel="noopener">Richard Jean So</a> &middot; <a href="mailto:richard.so@duke.edu">richard.so@duke.edu</a> &middot; Duke University
+  </footer>
+
+</div>
+</body>
+</html>
